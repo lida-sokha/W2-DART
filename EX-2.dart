@@ -11,7 +11,7 @@ class BankAccount {
     this._accountType,
     this._balance,
   );
-
+  /// get method of the private class of the balance 
   double balance() => _balance;
 
   double withdraw(double amount) {

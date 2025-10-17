@@ -1,10 +1,14 @@
-enum Skill { FLUTTER, DART, OTHER }
+enum Skill {
+  FLUTTER,
+  DART,
+  OTHER,
+}
 
 class Employee {
   final String _name;
   double _baseSalary = 40000;
   final List<Skill> _skills = Skill.values; //to get all enum value into list
-  final List< Map<String, Object>> _address;
+  final List<Map<String, Object>> _address;
   final int? _yearOfExperience;
 
   Employee(
@@ -55,7 +59,6 @@ class Employee {
     }
     return totalSalary;
   }
-
 }
 
 void main() {
@@ -70,6 +73,14 @@ void main() {
   );
   emp1.printDetails();
 
-  var emp2 = Employee('Ronan', 45000,[Skill.FLUTTER],[{"Street": 6, "City": "Phnom Penh", "Zipcode": 123450}],4,);
+  var emp2 = Employee(
+    'Ronan',
+    45000,
+    [Skill.FLUTTER],
+    [
+      {"Street": 6, "City": "Phnom Penh", "Zipcode": 123450},
+    ],
+    4,
+  );
   emp2.printDetails();
 }
