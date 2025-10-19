@@ -43,7 +43,7 @@ class Order {
 
     return "order #$id ($orderType)\n"
         "Product: ${products.join(',')}\n"
-        "Total: ${getTotal().toStringAsFixed(2)}";
+        "Total: ${getTotal()}";
   }
 }
 
