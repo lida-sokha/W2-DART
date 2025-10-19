@@ -32,7 +32,7 @@ class Order {
     if (deliveryType == DeliveryType.Delivery) {
       total += 2.0;
     }
-    return double.parse(total.toStringAsFixed(2));
+    return total;
   }
 
   @override
